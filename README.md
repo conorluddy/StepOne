@@ -1,42 +1,52 @@
 =======
 StepOne
 =======
-
-Node based starting point for my front end projects.
-
+Node.js leveraging starting point for my front end projects.
 
 
 
+Version
+=======
+V.0.1
 
 
 
 Notes
-============
+=====
+I'm hoping to keep this updated and evolve it as I come across more stuff that I like using...
 
 
 
-HTML
-	Swig (http://paularmstrong.github.io/swig/)
+To use
+======
+Download as zip and extract. Rename directory to whatever you want. Go to work.
 
 
-JS
+
+
+Ingredients
+===========
+
+For HTML
+
+	Swig templating (http://paularmstrong.github.io/swig/)
+
+For JavaScript
+
 	NPM
 	Mocha
 	Gulp
 	PhantomJS
+	...
 
+For	CSS
 
-
-
-CSS
-	Sass ( No Compass - http://www.sitepoint.com/compass-or-bourbon-sass-frameworks )
-	
+	Sass
 	Bourbon
 	Neat
 	Bitters
-
 	Normalize
-
+	...
 
 
 

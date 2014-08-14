@@ -12,14 +12,12 @@
 
 
 
-
-
-
 @import "media-queries/small";
 
 @include media( $mq-M ) {
 	@import "media-queries/medium";
 }
+
 @include media( $mq-L ) {
 	@import "media-queries/large";
 }
@@ -27,13 +25,3 @@
 
 
 
-
-
-
-
-
-/////////  Temporary - will be removed completely  /////////
-
-@import "modules/demo";
-
-/////////  Temporary  /////////
