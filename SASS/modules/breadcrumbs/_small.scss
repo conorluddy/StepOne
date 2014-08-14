@@ -1,0 +1,51 @@
+
+
+
+// Breadcrumbs
+//
+// Markup:
+// <ul class="breadcrumbs col-12">
+// 	<li><a href="">Car</a></li>
+// 	<li><a href="">Car Insurance</a></li>
+// 	<li>Experienced Drivers</li>
+// </ul>
+//
+// Styleguide 3.1.1.
+
+
+
+
+.breadcrumbs{
+	@include clearfix;
+	
+	font-size: em( 12 );
+
+	li{
+		float: left;
+
+		//If it's not the first breadcrumb, this will apply
+		& + li{
+			padding-left: 1.5em;
+
+			//Add divider chevron
+			&:before{
+				content: ">";
+				color: $orange;
+				position: relative;
+				left: -0.75em;
+				font-weight: normal;
+			}
+		}
+
+		//Current page - show as bold
+		&:last-child{
+			font-weight: 700;
+		}
+	}
+	
+	//Override default orange link
+	a{
+		color: $dark-gray;
+	}
+
+}

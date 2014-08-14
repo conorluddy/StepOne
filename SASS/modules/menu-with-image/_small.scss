@@ -1,0 +1,93 @@
+
+
+
+// Menu with image
+//
+// Menu module with image or icon to the left
+//
+// Styleguide 3.1.2.
+
+
+
+
+
+.module_menu-with-image{
+
+	@include clearfix;
+	position: relative;
+	font-size: em( 13 );  
+
+	img,
+	> i{
+		position: absolute;
+		left: em( 22, 13 );
+		top: 0;
+
+		~ *{
+			margin-left: 100px;
+		}
+	}
+
+	h3, h4, h5{
+		font-size: em( 22, 13 );
+		font-weight: 700;
+		margin-top: em( 22, 22 );
+		margin-bottom: em( 10, 22 );
+	}
+		
+	//"View more" link
+	a{
+		color: $blue;
+	}
+	
+
+	////Menu list
+	li{
+		a{
+			color: $dark-gray;
+
+			//Chevron arrow thing
+			&:before{
+				content: ">";
+				color: $blue;
+				font-weight: 700;
+				padding-right: em( 5 );
+			}
+		}
+	}
+
+
+	///  Variations  ///////////////
+
+
+	&.center-image{
+
+		img,
+		> i{
+			@include vertical-center;
+		}
+
+	}
+
+	&.pad-bottom{
+		padding-bottom: em( 22, 13 );
+	}
+
+
+
+
+	//Experimental - TODO: find a better way to do the bigger boxes
+	.col-L8 > &{
+		@include span-columns(8 of 8);
+		
+		background-color: $lightest-gray;
+		
+		img{
+			@include span-columns(4 of 8);	
+			position: inherit;
+			left: 0;
+		}
+	}
+
+
+}

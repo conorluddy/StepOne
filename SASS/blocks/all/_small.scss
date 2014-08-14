@@ -1,0 +1,30 @@
+
+
+.block{
+	@include outer-container;//Neat
+
+	margin-bottom: $vertical-space;
+
+	//Remove the maximum width that applies to the default block
+	&.block-wide{
+		max-width: 100%;	
+	}
+
+	//Blocks have a bottom margin by default as it's the most common form. 
+	//This removes the margin.
+	&.no-below-gap{
+		margin-bottom: 0;
+	}
+
+	//Double the gap below a block.
+	&.below-gap-x2{
+		margin-bottom: $vertical-space * 2;
+	}
+
+	//Grey background
+	&.block-grey{
+		background-color: $lightest-gray;
+	}
+}
+
+

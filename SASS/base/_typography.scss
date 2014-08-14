@@ -1,0 +1,203 @@
+
+
+// Typography
+//
+// Typography used throughout the project.
+//
+// Styleguide 1.2.
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $unitless-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $header-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1, h2, h3{
+  font-family: $header-font-family;
+  font-weight: 400;
+}
+h4, h5, h6{}
+
+h1 {
+  font-size: em( 36 );
+  line-height: em( 32, 36 );
+  margin-bottom: em( 10, 36 );
+  margin-top: 0;
+}
+
+h2 {
+  font-size: em( 30 );
+  line-height: em( 36, 30 );
+}
+
+h3 {
+  font-size: $base-font-size * 1.5; // 16 * 1.75 = 28px
+}
+
+h4 {
+  font-size: $base-font-size; // 16 
+  font-weight: 700;
+}
+
+h5 {
+  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+}
+
+h6 {
+  font-size: $base-font-size;
+}
+
+p {
+  margin: 0 0 em( 20, 14 );
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+
+
+::selection {
+  background: $orange; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: $orange; /* Gecko Browsers */
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+// Blockquotes
+//
+// Markup:
+// <blockquote><span>I have a dream</span></blockquote>
+// <blockquote><span>I have a photo</span><img src="http://placehold.it/460x230/0060ad" /></blockquote>
+//
+// Styleguide 1.2.1
+
+blockquote{
+  
+  @include clearfix;
+
+  border-bottom: 5px solid $base-border-color;
+  color: lighten($base-font-color, 15);  
+  margin: 50px 0 60px;
+  padding: 0 0 1px 0;
+  color: $dark-gray;
+  font-family: $header-font-family;
+  font-size: em( 45 );
+  line-height: em( 58, 45 );
+
+  span{
+
+    &:before,
+    &:after{
+      color: $orange;
+      display: inline-block;
+    }
+    &:before{
+      content: "\“";
+      float: left;
+    }
+    &:after{
+      content: "\”";
+    }
+  }
+
+  img{
+    float: right;
+    max-width: 50%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+// Caption
+//
+// Markup:
+// <div class="caption">Captions can come right after photos or videos etc</div>
+//
+// Styleguide 1.2.2
+caption, .caption{
+  background-color: $lightest-gray;
+  display: block;
+  margin-bottom: $vertical-space;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+
+
+  //Cancel out the default space below embeds
+  .aspect-wrap + &{
+    margin-top: -$vertical-space;
+  }
+}
+
+
+
+
+
+
+
+  
+
+  

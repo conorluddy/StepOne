@@ -1,0 +1,74 @@
+
+// Grid
+//
+// Documentation for the grid
+//
+// Styleguide 1.3.
+
+
+// Columns
+// 
+// Styleguide 1.3.1
+
+
+// @media screen and (max-width: 54.85714em)  {
+@include media( $mq-S ) {
+
+	@for $i from 1 through 4 {
+
+		.col-S#{$i} {
+
+			@include span-columns( $i );
+		
+			//I had last-child in here too but that's automatically
+			//added by omega(), so it was appearing twice in CSS
+			&.last{
+				@include omega();
+			}
+
+		}
+
+	}
+}
+
+
+// @media screen and (min-width: 54.85714em) and (max-width: 67.14286em)  {
+@include media( $mq-M ) {
+
+	@for $i from 1 through 8 {
+
+		.col-M#{$i} {
+
+			@include span-columns( $i );
+			&.last{
+				@include omega();
+			}
+
+		}
+
+	}
+
+}
+
+
+
+// @media screen and (min-width: 67.14286em)  {
+@include media( $mq-L ) {
+	
+	@for $i from 1 through 12 {
+
+		.col-L#{$i} {
+
+			@include span-columns( $i );
+
+			&.last{
+				@include omega();
+			}
+
+		}
+
+	}
+
+}
+
+

@@ -1,0 +1,44 @@
+
+// Content helpers
+//
+// Documentation for helpers
+//
+// Styleguide 1.4.
+
+
+
+
+
+
+
+
+// Aspect ratio wrappers
+// 
+// These are wrappers for embedded videos or other 
+// objects which need to retain proportional sides
+// but also a maximum width when the page is resized.
+// Default aspect ratio is 16:9
+// 
+// .aspect-wrap-4_3 - use a 4:3 aspect ratio instead of the default 16:9
+//
+// Styleguide 1.4.1
+.aspect-wrap{
+	position: relative;
+	height: 0;
+	margin-bottom: $vertical-space;
+	padding: 56.25% 0 0 0; // 9/16
+
+	> *{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $orange;
+		max-width: 100%;
+	}
+
+	&.aspect-wrap-4_3{
+		padding: 75% 0 0 0; // 3/4
+	}
+}

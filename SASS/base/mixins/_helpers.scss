@@ -1,0 +1,17 @@
+
+
+
+
+// vertical-center()
+// 
+// Center stuff vertically if it's absolutely positioned. Needs an IE fallback... (TODO)
+// 
+// Compatibility untested.
+// 
+// Styleguide 4.1.0
+
+@mixin vertical-center() {
+	top: 50%;
+	bottom: inherit;
+	transform: translate3d(0, -50%, 0);
+}

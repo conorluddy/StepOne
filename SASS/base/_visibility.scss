@@ -1,0 +1,83 @@
+
+
+
+// Visibility
+//
+// Media based visibility classes
+//
+// Styleguide 1.5.
+
+
+
+
+
+// Visible
+// 
+// Markup:
+// <div class="vis-S">This is a small screen/window</div>
+// <div class="vis-M">This is a medium screen/window</div>
+// <div class="vis-L">This is a large screen/window</div>
+// 
+// .vis-S - Show this on small screens
+// .vis-M - Show this on medium screens
+// .vis-L - Show this on large screens
+// .invis-S - Hide this on small screens
+// .invis-M - Hide this on medium screens
+// .invis-L - Hide this on large screens
+// 
+// Styleguide 1.5.1
+
+.hidden{
+	display: none;
+}
+
+.vis-S{
+	@include media( $mq-S ) { display: inherit!important;	}
+	@include media( $mq-M ) { display: none!important;	}
+	@include media( $mq-L ) { display: none!important;	}
+}
+
+.vis-M{	
+	@include media( $mq-S ) { display: none!important;	}
+	@include media( $mq-M ) { display: inherit!important;	}
+	@include media( $mq-L ) { display: none!important;	}
+}
+
+.vis-L{
+	@include media( $mq-S ) { display: none!important;	}
+	@include media( $mq-M ) { display: none!important;	}
+	@include media( $mq-L ) { display: inherit!important;	}
+}
+
+// /////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////
+
+.vis-M-down{	
+	@include media( $mq-S ) { display: inherit!important;	}
+	@include media( $mq-M ) { display: inherit!important;	}
+	@include media( $mq-L ) { display: none!important;	}
+}
+.vis-M-up{
+	@include media( $mq-S ) { display: none!important;	}
+	@include media( $mq-M ) { display: inherit!important;	}
+	@include media( $mq-L ) { display: inherit!important;	}
+}
+
+// /////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////
+
+.invis-S{
+	@include media( $mq-S ) { display: none!important;	}
+	@include media( $mq-M ) { display: inherit!important;	}
+	@include media( $mq-L ) { display: inherit!important;	}
+}
+.invis-M{	
+	@include media( $mq-S ) { display: inherit!important;	}
+	@include media( $mq-M ) { display: none!important;	}
+	@include media( $mq-L ) { display: inherit!important;	}
+}
+.invis-L{
+	@include media( $mq-S ) { display: inherit!important;	}
+	@include media( $mq-M ) { display: inherit!important;	}
+	@include media( $mq-L ) { display: none!important;	}
+}

@@ -1,0 +1,31 @@
+
+// GRiD ////////////////////////////////////////////////////////////////////////////////////////
+
+
+// $column: 100px;
+$border-box-sizing: true;
+$grid-columns: 12;
+$gutter: em( 20 );
+$max-width: em( 940 );
+
+
+
+
+// Neat Breakpoints - em's here broke everything, so using PX
+$bp-small: 767px;
+$bp-medium: 768px;
+$bp-large: 940px;
+
+
+
+
+//Respond
+$mq-S: new-breakpoint( max-width  $bp-small 4 );
+$mq-M: new-breakpoint( min-width  $bp-medium 8 );
+$mq-L: new-breakpoint( min-width  $bp-large 12 );
+
+
+
+
+//Liberty grid
+$vertical-space: em( 22 );

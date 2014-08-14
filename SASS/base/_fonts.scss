@@ -1,0 +1,89 @@
+
+
+
+
+
+
+//ROCKWELL [PAID / Domain limited AFAIK]
+
+// Probably need this for production - 
+// commented it so the page could actually load with Liberty's woeful connection
+// 
+// @import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=0f060278-5863-4f6f-adf5-e5683f3fa30f");
+
+@font-face{
+    font-family:"rockwell";
+    src:url("fonts/73e6c08f-deb5-4d6f-827b-597a84046aa4.eot?#iefix");
+    src:url("fonts/73e6c08f-deb5-4d6f-827b-597a84046aa4.eot?#iefix") format("eot"),
+        url("fonts/de4b0540-9702-4662-8f3a-228419485257.woff") format("woff"),
+        url("fonts/bc34c4cd-af2c-400d-b4d0-726e2d89f690.ttf") format("truetype"),
+        url("fonts/59c05ddc-99f9-44db-82ce-cb7f503b5110.svg#59c05ddc-99f9-44db-82ce-cb7f503b5110") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"rockwell";
+    src:url("fonts/864373f8-943b-449d-a730-462eb66d7058.eot?#iefix");
+    src:url("fonts/864373f8-943b-449d-a730-462eb66d7058.eot?#iefix") format("eot"),
+        url("fonts/49ff3af5-13b2-4add-8470-4cdac3cf650e.woff") format("woff"),
+        url("fonts/7d69578b-ab0e-4986-af19-428861ada4e4.ttf") format("truetype"),
+        url("fonts/2848532f-bf3e-4430-aae1-bc0d1367eb84.svg#2848532f-bf3e-4430-aae1-bc0d1367eb84") format("svg");
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+//OPEN SANS
+
+  //Regular
+  @font-face {
+      font-family: 'opensans';
+      src: url('fonts/OpenSans-Regular-webfont.eot');
+      src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+           url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+           url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+  //Italic
+  @font-face {
+      font-family: 'opensans';
+      src: url('fonts/OpenSans-Italic-webfont.eot');
+      src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/OpenSans-Italic-webfont.woff') format('woff'),
+           url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+           url('fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+
+  }
+  //Bold
+  @font-face {
+      font-family: 'opensans';
+      src: url('fonts/OpenSans-Bold-webfont.eot');
+      src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+           url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+           url('fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+      font-weight: 700;
+      font-style: normal;
+
+  }
+  //Bolt Italic
+  @font-face {
+      font-family: 'opensans';
+      src: url('fonts/OpenSans-BoldItalic-webfont.eot');
+      src: url('fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+           url('fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+           url('fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+      font-weight: 700;
+      font-style: italic;
+
+  }
+

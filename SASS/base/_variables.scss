@@ -1,0 +1,126 @@
+
+// SASS Variables
+// 
+// Defined SASS variables you can use throughout the SASS files
+// 
+// Styleguide 1.1
+
+
+
+
+
+
+
+
+
+// Fonts
+// 
+// ```css
+// opensans, $helvetica - $sans-serif
+// rockwell, serif - $serif
+// ```
+// 
+// Styleguide 1.1.2
+
+$sans-serif: opensans, $helvetica;
+$serif: rockwell, serif;
+$base-font-family: $sans-serif;
+$header-font-family: rockwell, $base-font-family;
+
+// Sizes
+$em-base: 14px;
+$base-font-size: 0.875em;
+$base-line-height: $base-font-size * 1.796;
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-line-height: 1.25em;
+$base-border-radius: em(3);
+
+
+
+
+
+
+
+
+// Colors
+// 
+// ```css
+// #477DCA - $blue
+// #444a50 - $dark-gray
+// #999999 - $medium-gray
+// #DDDDDD - $light-gray
+// #f2f2f2 - $lightest-gray
+// #FBE3E4 - $light-red
+// #FFF6BF - $light-yellow
+// #E6EFC2 - $light-green
+// #f78f2e - $orange
+// #ebc728 - $yellow
+// #0060ad - $blue
+// #013e7f - $blue-corporate
+// #00ab9b - $teal
+// #43b659 - $green
+// #d32e35 - $red
+// #e86c07 - $orange-custom
+// #F48730 - $orange-lighter-custom
+// ```
+// 
+// Styleguide 1.1.1.
+$blue: #477DCA; 
+$dark-gray: #444a50;
+$medium-gray: #999;
+$light-gray: #DDD;
+$lightest-gray: #f2f2f2;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+//From Brand Guidelines (2013)
+$orange: #f78f2e;
+$yellow: #ebc728;
+$blue: #0060ad;
+$blue-corporate: #013e7f;
+$teal: #00ab9b;
+$green: #43b659; //Overridden below...
+$red: #d32e35;
+//from designs
+$orange-custom: #e86c07;
+$orange-lighter-custom: #F48730;
+// Background Color
+$base-background-color: white;
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $orange;
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+// Border color
+$base-border-color: $light-gray;
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+
+
+
+
+
+
+
+
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+
+
+
+
+
